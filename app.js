@@ -17,7 +17,7 @@ const appTimer = () => {
 
             totalSeconds--;
 
-            let minutesLeft = math.floor(totalSeconds/60);
+            let minutesLeft = Math.floor(totalSeconds/60);
             let secondsLeft = totalSeconds % 60;
 
             if (secondsLeft < 10){
@@ -25,7 +25,7 @@ const appTimer = () => {
             } else {
                 secondDiv.textContent = secondsLeft;
             }
-            minuteDiv.textContent = '${minutesLeft}'
+            minuteDiv.textContent = minutesLeft;
 
             if(minutesLeft === 0 && secondsLeft === 0){
                 bells.play()
