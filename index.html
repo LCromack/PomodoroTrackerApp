@@ -10,23 +10,39 @@
     <title>Pomodoro App</title>
 </head>
 <body>
-    <div class="app-container">
-        <h1>Pomodoro</h1>
-        <div class="app-message">Press Start to Begin</div>
-        <div class="app-circle">
-            <div class="circle-shape">
-                <div class="semi-circle right-side circle-mask"></div>
-                <div class="semi-circle right-side circle"></div>
-                <div class="semi-circle left-side circle-mask"></div>
-                <div class="semi-circle left-side circle"></div>
+    <div class="elements">
+        <div class="wrapper">
+            <header>Todo App</header>
+            <div class="inputField">
+              <input type="text" placeholder="Add your new todo">
+              <button><i class="fas fa-plus"></i></button>
             </div>
-            <div class="app-counter-box">
-                <p><span class="minutes">25</span>:<span class="seconds">00</span></p>
+            <ul class="todoList">
+              <!-- data are comes from local storage -->
+            </ul>
+            <div class="footer">
+              <span>You have <span class="pendingTasks"></span> pending tasks</span>
+              <button>Clear All</button>
             </div>
-            <button class="btn-start">Start</button>
         </div>
-        <button class="btn-pause">Pause</button>
-        <button class="btn-restart">Restart</button>
+        <div class="app-container">
+            <h1>Pomodoro</h1>
+            <div class="app-message">Press Start to Begin</div>
+            <div class="app-circle">
+                <div class="circle-shape">
+                    <div class="semi-circle right-side circle-mask"></div>
+                    <div class="semi-circle right-side circle"></div>
+                    <div class="semi-circle left-side circle-mask"></div>
+                    <div class="semi-circle left-side circle"></div>
+                </div>
+                <div class="app-counter-box">
+                    <p><span class="minutes">25</span>:<span class="seconds">00</span></p>
+                </div>
+                <button class="btn-start">Start</button>
+            </div>
+            <button class="btn-pause">Pause</button>
+            <button class="btn-restart">Restart</button>
+        </div>
     </div>
 </body>
 <script src="./app.js"></script>
